@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {  
   Text,
@@ -17,7 +11,8 @@ class WelcomeScreen extends Component {
   }
 
   componentDidMount(){
-    setTimeout(this.props.navigation.navigate('Home',{}), 3000); 
+    console.log('i was here');
+    setTimeout(() => this.props.navigation.navigate('SearchByLocation',{}), 3000); 
   }
 
   render(){

@@ -8,18 +8,18 @@ import WelcomeScreen from './screens/WelcomeScreen';
 import SearchByLocationScreen from './screens/SearchByLocationScreen';
 
 const Router = StackNavigator({
-	// Welcome: {
-	// 	screen: WelcomeScreen,
-	// 	navigationOptions: {
-	// 		header: null
-	// 	}		
-	// },
-	// SearchByLocation: {
-	// 	screen: SearchByLocationScreen,
-	// 	navigationOptions: {
-	// 		header: null
-	// 	}
-	// },
+	Welcome: {
+		screen: WelcomeScreen,
+		navigationOptions: {
+			header: null
+		}		
+	},
+	SearchByLocation: {
+		screen: SearchByLocationScreen,
+		navigationOptions: {
+			header: null
+		}
+	},
 	Home: {
 		screen: HomeScreen,
 		// headerLeft: null,
@@ -30,7 +30,8 @@ const Router = StackNavigator({
 			},
 			headerTitleStyle: {
 				color: 'white'
-			}
+			},
+			headerLeft: null
 		}
 	},
 	SearchResults: {
